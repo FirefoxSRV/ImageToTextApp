@@ -5,25 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10sp"
+    android:background="@color/black"
     tools:context=".ScannerActivity">
 
     <ImageView
+        android:id="@+id/inputImage"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/inputImage"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/download"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text"
+        android:text="Picture first, detect next"
         android:layout_margin="10dp"
         android:textSize="32sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputImage"
@@ -31,7 +32,7 @@
         />
 
     <Button
-        android:id="@+id/buttonClick"
+        android:id="@+id/buttonClickPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -51,6 +52,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClick" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonClickPicture" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
