@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10sp"
     android:background="@color/black"
     tools:context=".ScannerActivity">
 
@@ -32,6 +31,7 @@
         />
 
     <Button
+        android:layout_margin="10sp"
         android:id="@+id/buttonClickPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,9 +40,12 @@
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="24sp"
         android:text="Take the picture"
+        android:textColor="@color/white"
+        android:background="#808000"
         app:layout_constraintTop_toBottomOf="@+id/textOutput" />
 
     <Button
+        android:layout_margin="10sp"
         android:id="@+id/buttonDetectText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
